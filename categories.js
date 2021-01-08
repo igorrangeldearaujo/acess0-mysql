@@ -1,5 +1,3 @@
-const Connection = require("mysql2/typings/mysql/lib/Connection")
-
 const init = connection => {
     const create = async(data) => {
         const conn = await connection

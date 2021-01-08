@@ -5,7 +5,7 @@ const run = async() => {
         const connection = await mysql.createConnection({
             host: 'localhost',
             user: 'root',
-            database: 'catproducts'
+            database: 'cat-products'
         })
         try{
             const [ results, fields ] = await connection.query('insert into categories (category) values (?)',['cat test'])
